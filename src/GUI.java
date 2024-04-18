@@ -36,8 +36,8 @@ public class GUI {
         panel.add(label2);
 
         //buttons
-        JButton b1 = new JButton("-5");
-        JButton b2 = new JButton("+5");
+        JButton b1 = new JButton("-1");
+        JButton b2 = new JButton("+1");
         panel.add(b1);
         panel.add(b2);
 
