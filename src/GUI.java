@@ -67,13 +67,13 @@ public class GUI {
 
     //Methods that are called when buttons are clicked
     public void b1Press() {
-        val = val-5;
+        val--;
         changes++;
         label1.setText("Value: " + val);
         label2.setText("Number of changes: " + changes);
     }
     public void b2Press() {
-        val = val+5;
+        val++;
         changes++;
         label1.setText("Value: " + val);
         label2.setText("Number of changes: " + changes);
