@@ -26,7 +26,7 @@ public class GUI {
         panel.setLayout(new GridLayout(2, 2, 10, 10));
         frame.add(panel);
 
-        //Labels!
+        //Labels
         label1 = new JLabel("Value: " + val);
         label1.setHorizontalAlignment(JLabel.CENTER);
         panel.add(label1);
@@ -35,23 +35,23 @@ public class GUI {
         label2.setHorizontalAlignment(JLabel.CENTER);
         panel.add(label2);
 
-        //Buttons!
-        JButton b1 = new JButton("-1");
-        JButton b2 = new JButton("+1");
+        //buttons
+        JButton b1 = new JButton("-5");
+        JButton b2 = new JButton("+5");
         panel.add(b1);
         panel.add(b2);
 
         //Adding actions to buttons
         b1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                //call we want to run when B1 is pressed goes here
+                //what we want to run when B1 is pressed goes here
                 b1Press();
             }
         });
 
         b2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                //call we want to run when B2 is pressed goes here
+                //what we want to run when B2 is pressed goes here
                 b2Press();
             }
         });
@@ -67,13 +67,13 @@ public class GUI {
 
     //Methods that are called when buttons are clicked
     public void b1Press() {
-        val--;
+        val = val-5;
         changes++;
         label1.setText("Value: " + val);
         label2.setText("Number of changes: " + changes);
     }
     public void b2Press() {
-        val++;
+        val = val+5;
         changes++;
         label1.setText("Value: " + val);
         label2.setText("Number of changes: " + changes);
